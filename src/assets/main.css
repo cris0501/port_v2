@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?i2snxf');
+  src:  url('fonts/icons.eot?i2snxf#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?i2snxf') format('truetype'),
+    url('fonts/icons.woff?i2snxf') format('woff'),
+    url('fonts/icons.svg?i2snxf#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-suitcase:before {
+  content: "\e915";
+}
+.icon-user:before {
+  content: "\e90e";
+}
+.icon-apache:before {
+  content: "\e912";
+  color: #d22128;
+}
+.icon-c:before {
+  content: "\e90f";
+  color: #a8b9cc;
+}
+.icon-docker:before {
+  content: "\e919";
+  color: #1488c6;
+}
+.icon-facebook:before {
+  content: "\e900";
+  color: #1877f2;
+}
+.icon-flask:before {
+  content: "\e921";
+}
+.icon-git:before {
+  content: "\e91b";
+  color: #f05032;
+}
+.icon-github:before {
+  content: "\e913";
+}
+.icon-gitlab:before {
+  content: "\e91c";
+  color: #fca121;
+}
+.icon-godot:before {
+  content: "\e920";
+  color: #478cbf;
+}
+.icon-library:before {
+  content: "\e90a";
+}
+.icon-java:before {
+  content: "\e917";
+}
+.icon-jenkins:before {
+  content: "\e91a";
+  color: #d24939;
+}
+.icon-laravel:before {
+  content: "\e914";
+  color: #ff2d20;
+}
+.icon-latex:before {
+  content: "\e925";
+  color: #008080;
+}
+.icon-mail:before {
+  content: "\e901";
+  color: #168de2;
+}
+.icon-mongodb:before {
+  content: "\e91d";
+  color: #47a248;
+}
+.icon-mysql:before {
+  content: "\e91e";
+}
+.icon-postgresql:before {
+  content: "\e922";
+  color: #336791;
+}
+.icon-python:before {
+  content: "\e928";
+  color: #3776ab;
+}
+.icon-react:before {
+  content: "\e916";
+  color: #61dafb;
+}
+.icon-redis:before {
+  content: "\e926";
+  color: #d82c20;
+}
+.icon-sass:before {
+  content: "\e923";
+  color: #c69;
+}
+.icon-tailwindcss:before {
+  content: "\e918";
+  color: #38b2ac;
+}
+.icon-vue:before {
+  content: "\e91f";
+  color: #4fc08d;
+}
+.icon-webpack:before {
+  content: "\e924";
+  color: #8dd6f9;
+}
+.icon-calculator:before {
+  content: "\e911";
+}
+.icon-book:before {
+  content: "\e910";
+}
+.icon-trash:before {
+  content: "\e90d";
+}
+.icon-check:before {
+  content: "\e90c";
+}
+.icon-ok:before {
+  content: "\e90c";
+}
+.icon-books:before {
+  content: "\e90b";
+}
+.icon-heart:before {
+  content: "\e902";
+}
+.icon-cross:before {
+  content: "\e903";
+}
+.icon-cancel:before {
+  content: "\e903";
+}
+.icon-close:before {
+  content: "\e903";
+}
+.icon-download:before {
+  content: "\e904";
+}
+.icon-upload:before {
+  content: "\e905";
+}
+.icon-bubble:before {
+  content: "\e906";
+}
+.icon-comment:before {
+  content: "\e906";
+}
+.icon-chat:before {
+  content: "\e906";
+}
+.icon-talk:before {
+  content: "\e906";
+}
+.icon-home:before {
+  content: "\e907";
+}
+.icon-house:before {
+  content: "\e907";
+}
+.icon-arrow-right:before {
+  content: "\e908";
+}
+.icon-right:before {
+  content: "\e908";
+}
+.icon-arrow-left:before {
+  content: "\e909";
+}
+.icon-left:before {
+  content: "\e909";
+}
+
+
+
