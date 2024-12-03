@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center text-white relative z-[2]">
-      <div class="flex flex-col items-end justify-center p-4 mr-32 text-left w-1/2">
+      <div class="flex flex-col items-end justify-center p-4 ext-left w-1/2">
         <span class="text-4xl text-yellow-400 font-bold"> Desarrollador Web </span>
         <span class="text-6xl font-bold"> Cristian Ramirez </span>
         <p class="w-3/4 mt-5">
@@ -10,9 +10,9 @@
           Como creyente en el cambio y la innovación, abrazo las metodologías ágiles como Scrum para impulsar la colaboración y la eficiencia en cada equipo en el que trabajo.
         </p>
       </div>
-      <div class="flex flex-col w-1/2 items-center justify-center p-8 text-white text-left">
+      <div class="flex flex-col w-1/2 items-center justify-center p-8 text-white text-left min-h-[95vh]">
         <span class="text-3xl mb-4"> Experiencia </span>
-        <div class="w-1/2">
+        <div class="w-2/3">
             <boxExperience title='NECSUS' date='Ago-2023' endDate='Actualidad'>
               <span> Desarrollador Full Stack </span>
               <ul class="list-disc ml-5 mt-2">
@@ -78,31 +78,85 @@
 
     <div class="min-h-[50vh] text-white">
       <span> Proyectos </span>
+
+      <div class="proyects">
+        <div class="flex-1 basis-1/2 h-[500px] p-2">
+          <div class="bg-blue-500 w-full h-full"></div>
+        </div>
+        <div class="flex-1 basis-1/2 h-[500px] p-2">
+          <div class="bg-blue-500 w-full h-full"></div>
+        </div>
+        <div class="flex-1 basis-1/5 h-[300px] p-2">
+          <div class="bg-blue-500 w-full h-full"></div>
+        </div>
+        <div class="flex-2 basis-1/2 h-[300px] p-2">
+          <div class="bg-blue-500 w-full h-full"></div>
+        </div>
+        <div class="flex-2 basis-1/5 h-[300px] p-2">
+          <div class="bg-blue-500 w-full h-full"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack flex flex-col justify-center space-y-10 items-center min-h-[80vh] mt-12 text-white">
+      <span class="my-8"> Stack </span>
+
+      <div class="flex stack">
+        <div class="stack-vue"><i class="icon icon-vue"></i></div>
+        <div class="stack-react"><i class="icon icon-react"></i></div>
+      </div>
+
+      <div class="flex stack">
+        <div class="stack-laravel"><i class="icon icon-laravel"></i></div>
+        <div class="stack-java text-yellow-400"><i class="icon icon-java"></i></div>
+      </div>
     </div>
 </template>
 
 <script setup>
    import boxExperience from '@/components/boxExperience.vue'
+   import { ref } from 'vue'
 </script>
 
 <style scoped>
   .f-circle {
-    @apply rounded-full w-[500px] h-[500px] absolute -z-0;
+    @apply rounded-full absolute inset-0 mx-auto;
     background: rgb(37,99,235);
     background: radial-gradient(circle, rgba(37,99,235,0.8) 0%, rgba(37,99,235,0) 40%);
-    transform: scale(3);
-    top: calc(50% - 250px);
-    left: calc(50% - 250px);
-    animation: blink 2.5s infinite ease-in-out alternate;
+    animation: blink 2s infinite ease-in-out alternate;
   }
 
   @keyframes blink {
     from {
-      transform: scale(3);
+      width: 70vw;
     }
 
     to {
-      transform: scale(3.5);
+      width: 100vw;
     }
+  }
+
+  .proyects {
+     @apply flex flex-wrap justify-between;
+  }
+
+  .stack > div {
+    @apply text-6xl rounded-full transition ease-in-out duration-200 space-x-10;
+  }
+  .stack-vue:hover {
+    @apply bg-emerald-500/20;
+    box-shadow: 0px 0px 10px 15px rgba(16, 185, 129, .2);
+  }
+  .stack-react:hover {
+    @apply bg-cyan-400/20;
+    box-shadow: 0px 0px 10px 15px rgba(34, 211, 238, .2);
+  }
+  .stack-laravel:hover {
+    @apply bg-red-500/20;
+    box-shadow: 0px 0px 10px 15px rgba(239, 68, 68, .2);
+  }
+  .stack-java:hover {
+    @apply bg-yellow-400/20;
+    box-shadow: 0px 0px 10px 15px rgba(250, 204, 21, .2);
   }
 </style>

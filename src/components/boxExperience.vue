@@ -1,9 +1,9 @@
 <template>
-  <div class="relative border-l-4 border-white py-3">
+  <div class="relative border-l-2 border-white py-3 group">
     <i class="icon icon-suitcase text-black"></i>
-    <div class="flex flex-col px-9 py-8 text-xl bg-white/20 rounded-r-lg">
+    <div class="flex flex-col px-9 py-8 text-xl bg-white/20 rounded-r-lg h-[125px] overflow-y-hidden group-hover:h-[500px] transition-[height] ease-in-out duration-500">
       <span> {{ title }} </span>
-      <span> {{ date }} - {{ endDate }} </span>
+      <span class="mb-8"> {{ date }} / {{ endDate }} </span>
       <slot></slot>
     </div>
   </div>
