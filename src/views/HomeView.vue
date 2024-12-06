@@ -80,18 +80,95 @@
       <span> Proyectos </span>
 
       <div class="proyects">
-        <div class="flex-1 basis-1/2 h-[500px] p-2">
+        <div class="flex-1 basis-1/2 h-[500px] p-4">
+          <div class="atropos lib-latex h-full">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="flex flex-col justify-center w-full h-full p-5 bg-gradient-to-r from-rose-400 to-orange-300 text-justify rounded-xl">
+                    <section class="flex flex-1 justify-around h-1/2">
+                      <img src="/images/lib_latex.svg" class="w-1/4" data-atropos-offset="2" />
+                      <i class="icon icon-arrow-right text-6xl absolute top-1/3 w-1/5" data-atropos-offset="3"></i>
+                      <div class="w-1/3 relative" data-atropos-offset="4">
+                        <i class="icon icon-react text-9xl absolute top-1/3"></i>
+                        <i class="icon icon-html5 text-9xl absolute left-1/2"></i>
+                        <i class="icon icon-css3 text-9xl absolute top-2/3 left-2/3"></i>
+                      </div>
+                    </section>
+                    <span class="text-2xl font-bold mb-4" data-atropos-offset="2">
+                      Biblioteca cientifica
+                    </span>
+                    <p data-atropos-offset="1">
+                      LATEX es un poderoso procesador de texto que nos permite crear documentos
+                      de caracter cientifico. Sin emabrgo, solo permite la creacion de archivos
+                      PDF por lo que hice todo un sistema de renderizado que permite mostrar
+                      LATEX en la web de una forma completa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 basis-1/2 h-[500px] p-4">
+          <div class="atropos ef-framework h-full">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="flex flex-col justify-center w-full h-full p-5 bg-gradient-to-br bg-gradient-to-b from-indigo-500 to-pink-500 text-justify rounded-xl">
+                    <section class="flex flex-1 justify-center relative h-1/2">
+                      <img src="/images/ef.svg" class="w-1/2 mx-auto" data-atropos-offset="4" />
+                      <i class="icon icon-python text-6xl absolute top-3/4 left-3/4"></i>
+                    </section>
+                    <span class="text-2xl font-bold mb-4" data-atropos-offset="2">
+                      Framework EF
+                    </span>
+                    <p data-atropos-offset="1">
+                      Una de las mejores formas de aprender en esta industria es crear un
+                      proyecto que te permita aprender y comprender como funcionan las
+                      tecnologias actuales. Por eso fue que desarrolle un framework personal,
+                      <span class="text-yellow-300 font-bold text-lg"> Easy &amp; Fast </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-2 basis-1/5 h-[300px] p-2">
           <div class="bg-blue-500 w-full h-full"></div>
         </div>
-        <div class="flex-1 basis-1/2 h-[500px] p-2">
-          <div class="bg-blue-500 w-full h-full"></div>
+
+        <div class="flex-1 basis-1/2 h-[300px] p-4">
+          <div class="atropos cards h-full">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="flex w-full h-full p-5 bg-gradient-to-r from-blue-600 to-violet-600 text-justify rounded-xl">
+                    <section class="flex w-1/2 p-4">
+                      <img src="/images/cards.svg" class="mx-auto" data-atropos-offset="4" />
+                    </section>
+                    <section class="flex flex-col justify-around w-3/4">
+                      <span class="text-2xl font-bold" data-atropos-offset="2">
+                        Tarjetas interactivas
+                      </span>
+                      <p data-atropos-offset="1">
+                        ¿Alguna vez usaste tarjetas para aprender un idioma o algun concepto? <br>
+                        Yo si y mas de una vez las olvide en casa. Es por ello que plasme ese
+                        concepto de utilidad en una pequeña aplicacion web que no solo gestiona
+                        las tarjetas de una forma sencilla sino que tambien puedes practicar con
+                        la informacion. Algo genial.
+                      </p>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="flex-1 basis-1/5 h-[300px] p-2">
-          <div class="bg-blue-500 w-full h-full"></div>
-        </div>
-        <div class="flex-2 basis-1/2 h-[300px] p-2">
-          <div class="bg-blue-500 w-full h-full"></div>
-        </div>
+
         <div class="flex-2 basis-1/5 h-[300px] p-2">
           <div class="bg-blue-500 w-full h-full"></div>
         </div>
@@ -145,8 +222,34 @@
 </template>
 
 <script setup>
-   import boxExperience from '@/components/boxExperience.vue'
-   import { ref } from 'vue'
+  import { onMounted } from 'vue'
+  import Atropos from 'atropos'
+  import 'atropos/css/min'
+
+  import boxExperience from '@/components/boxExperience.vue'
+
+  onMounted( () => {
+    const libLATEX = Atropos({
+      el: '.lib-latex',
+      activeOffset: 5,
+      rotateXMax: 5,
+      rotateYMax: 5
+    })
+
+    const EF3D = Atropos({
+      el: '.ef-framework',
+      activeOffset: 5,
+      rotateXMax: 5,
+      rotateYMax: 5
+    })
+
+    const cards = Atropos({
+      el: '.cards',
+      activeOffset: 5,
+      rotateXMax: 5,
+      rotateYMax: 5
+    })
+  })
 </script>
 
 <style scoped>
@@ -169,6 +272,11 @@
 
   .proyects {
      @apply flex flex-wrap justify-between;
+  }
+  .glass {
+      background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+      backdrop-filter: blur(10px);          /* Difumina el contenido detrás */
+      -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
   }
 
   .stack {
