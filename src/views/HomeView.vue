@@ -12,7 +12,7 @@
         <section class="flex justify-around w-5/6 my-2">
           <a target="_blank"
             class="w-1/2"
-            href="https://drive.google.com/file/d/1hfjYpMe7D3RCMheCNS2x9T3wncrbnVfT/view">
+            href="https://drive.google.com/file/d/1Q68QJtlRveXKlZGPwlPUZL4gOYgQs5U4">
             <button class="rounded-xl bg-green-600 px-4 py-3 mb-2 mt-4 font-bold text-lg w-full">
               Mi curriculum
             </button>
