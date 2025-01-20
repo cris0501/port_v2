@@ -15,5 +15,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: 'https://cris0501.github.io/port_v2'
+  base: '/port_v2'
 })
