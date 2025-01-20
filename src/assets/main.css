@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?8d7j1w');
-  src:  url('fonts/icons.eot?8d7j1w#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?8d7j1w') format('truetype'),
-    url('fonts/icons.woff?8d7j1w') format('woff'),
-    url('fonts/icons.svg?8d7j1w#icons') format('svg');
+  src:  url('fonts/icons.eot?vcjuwd');
+  src:  url('fonts/icons.eot?vcjuwd#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?vcjuwd') format('truetype'),
+    url('fonts/icons.woff?vcjuwd') format('woff'),
+    url('fonts/icons.svg?vcjuwd#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -99,6 +99,7 @@
 }
 .icon-java:before {
   content: "\e917";
+  color: #facc15;
 }
 .icon-javascript:before {
   content: "\e92a";
@@ -141,6 +142,7 @@
 }
 .icon-mysql:before {
   content: "\e91e";
+  color: #facc15;
 }
 .icon-php:before {
   content: "\e930";
@@ -152,6 +154,7 @@
 }
 .icon-python:before {
   content: "\e928";
+  color: #3776ab;
 }
 .icon-react:before {
   content: "\e916";
@@ -177,22 +180,7 @@
   content: "\e924";
   color: #8dd6f9;
 }
-.icon-bash .path1:before {
-  content: "\e904";
-  color: rgb(255, 255, 255);
-}
-.icon-bash .path2:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: rgb(40, 46, 52);
-}
-.icon-bash .path3:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon-bash .path4:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: rgb(82, 164, 51);
+.icon-youtube:before {
+  content: "\e90b";
+  color: #f00;
 }
